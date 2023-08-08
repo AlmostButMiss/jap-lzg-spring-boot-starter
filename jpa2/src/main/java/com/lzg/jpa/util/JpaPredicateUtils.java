@@ -5,16 +5,13 @@ import com.lzg.jpa.annotation.query.*;
 import com.lzg.jpa.entity.BaseEntity;
 import com.lzg.jpa.function.TiFunction;
 import com.lzg.jpa.request.QueryRequest;
-import com.wuchuangroup.jpa.annotation.query.*;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.jpa.domain.Specification;
 
-import javax.persistence.criteria.*;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.time.LocalDateTime;
-import java.util.*;
 import java.util.stream.Collectors;
 
 /**

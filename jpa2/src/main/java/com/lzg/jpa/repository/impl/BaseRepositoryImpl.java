@@ -2,12 +2,12 @@ package com.lzg.jpa.repository.impl;
 
 import com.lzg.jpa.entity.BaseEntity;
 import com.lzg.jpa.enums.LogicalDeleteEnum;
+import com.lzg.jpa.repository.BaseRepository;
 import com.lzg.jpa.request.QueryRequest;
 import com.lzg.jpa.request.UpdateRequest;
 import com.lzg.jpa.util.CommonUtils;
 import com.lzg.jpa.util.JpaPredicateUtils;
 import com.lzg.jpa.util.SpringContextUtils;
-import com.lzg.jpa.repository.BaseRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;

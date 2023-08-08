@@ -2,7 +2,6 @@ package com.lzg.jpa.request.impl;
 
 import com.lzg.jpa.annotation.query.*;
 import com.lzg.jpa.request.BaseQueryRequest;
-import com.wuchuangroup.jpa.annotation.query.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
