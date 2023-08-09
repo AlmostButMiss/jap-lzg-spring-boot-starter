@@ -3,6 +3,7 @@ package com.lzg.jpa.listener;
 import com.lzg.jpa.entity.BaseEntity;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
 
 /**
