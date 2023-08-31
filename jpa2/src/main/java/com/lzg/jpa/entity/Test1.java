@@ -72,7 +72,7 @@ import java.math.BigDecimal;
 
 @Entity(name = "Test1")
 @Table(
-        name = "wc_test1",
+        name = "jpa_test1",
         uniqueConstraints = {
                 @UniqueConstraint(
                         name = "tableName_ColumnName_ColumnName_unique_key",

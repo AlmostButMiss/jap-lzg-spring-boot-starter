@@ -15,7 +15,6 @@ import java.util.Set;
  **/
 public class CommonUtils {
 
-
     public static String[] getNullPropertyNames(Object source) {
         final BeanWrapper src = new BeanWrapperImpl(source);
         java.beans.PropertyDescriptor[] pds = src.getPropertyDescriptors();

@@ -9,9 +9,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.jpa.domain.Specification;
 
+import javax.persistence.criteria.*;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 import java.time.LocalDateTime;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -25,16 +27,6 @@ public class JpaPredicateUtils {
 
 
     public static List<Predicate> getPredicates(QueryRequest queryRequest, Root<?> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
-
-//        predicates.add(criteriaBuilder.ge(root.get("id"), 3));
-//        predicates.add(criteriaBuilder.like(root.get("indexField1"), "%" + "indexField1" + "%"));
-//        predicates.add(criteriaBuilder.equal(root.get("indexField2"), "indexField2"));
-//        predicates.add(criteriaBuilder.equal(root.get("indexField3"), "indexField3"));
-////                predicates.add(criteriaBuilder.equal(root.get("logicalDelete"), LogicalDeleteEnum.UN_DELETE));
-//        predicates.add(criteriaBuilder.equal(root.get("varcharFiled"), "varcharFiled"));
-//        predicates.add(criteriaBuilder.between(root.get("createTime"), LocalDateTime.of(LocalDate.of(2023, 7, 1), LocalTime.MAX), LocalDateTime.of(LocalDate.of(2023, 9, 1), LocalTime.MAX)));
-//        predicates.add(criteriaBuilder.greaterThan(root.get("lastModifiedTime"), LocalDateTime.of(LocalDate.of(2023, 7, 2), LocalTime.MAX)));
-//        predicates.add(criteriaBuilder.greaterThanOrEqualTo(root.get("lastModifiedTime"), LocalDateTime.of(LocalDate.of(2023, 7, 3), LocalTime.MAX)));
 
         return Arrays
                 .stream(queryRequest.getClass().getDeclaredFields())
